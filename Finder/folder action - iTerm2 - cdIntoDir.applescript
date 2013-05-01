@@ -1,14 +1,18 @@
--- cd to the current (selected or not) finder window folder in iTerm.
--- Modified script from this source: http://snippets.dzone.com/posts/show/961
+(*
+while browsing in Finder cd to the current (selected or not) folder using iTerm2
 
--- Instructions:
--- paste this script into Script Editor and save as an application to ~/Library/Scripts/Applications/Finder/cd
--- Drag it to the toolbar of a finder window.
--- Activate it by clicking on it.
+Modified script from this source: http://snippets.dzone.com/posts/show/961
 
--- To give the saved script the same icon as iTerm :
--- $ rm ~/Library/Scripts/Applications/Finder/cd.app/Contents/Resources/droplet.icns
--- $ cp /Applications/iTerm.app/Contents/Resources/iTerm.icns ~/Library/Scripts/Applications/Finder/cd.app/Contents/Resources/droplet.icns
+Instructions:
+1. $ mkdir ~/Library/Scripts/Applications/Finder
+2. Paste this Script into Script Editor and save as an application to ~/Library/Scripts/Applications/Finder/cdIntoDir.app
+3. To give the saved script the same icon as iTerm:
+   $ rm ~/Library/Scripts/Applications/Finder/cdIntoDir.app/Contents/Resources/droplet.icns
+   $ cp /Applications/iTerm.app/Contents/Resources/iTerm.icns ~/Library/Scripts/Applications/Finder/cdIntoDir.app/Contents/Resources/droplet.icns
+4. cd ~/Library/Scripts/Applications/Finder and drag your brand new cdIntoDir.app onto Finder's top toolbar.
+
+Copyright © 2013 Konrad Gibaszewski
+*)
 
 -- script was opened by click in toolbar
 on run
